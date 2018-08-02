@@ -35,12 +35,14 @@ export class PendientesPage{
                 text:'Cancelar'
             },{
                 text:'Agregar',
-                handler:data =>{
+                handler: data =>{
 
-                    if(data.titulo.length ===0){
+                    if(data.titulo.length === 0){
                         return;
                     }
-                    this.navCtrl.push(AgregarPage);                    
+                    this.navCtrl.push(AgregarPage,{
+                        titulo: data.titulo
+                    });                    
                     
                 }
             }]
