@@ -13,6 +13,8 @@ import { TerminadosPage } from '../pages/terminados/terminados.component';
 
 import { DeseosService } from '../services/deseos.service';
 import { AgregarPage } from '../pages/agregar/agregar.component';
+import { FiltroCompletadoPipe } from '../pipes/filtro-completado/filtro-completado';
+import { ListasComponent } from '../components/listas.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { AgregarPage } from '../pages/agregar/agregar.component';
     TabsPage,
     PendientesPage,
     TerminadosPage,
-    AgregarPage
+    AgregarPage,
+    FiltroCompletadoPipe,
+    ListasComponent
 
   ],
   imports: [
@@ -33,7 +37,8 @@ import { AgregarPage } from '../pages/agregar/agregar.component';
     TabsPage,
     PendientesPage,
     TerminadosPage,
-    AgregarPage
+    AgregarPage,
+    ListasComponent
   ],
   providers: [
     StatusBar,
