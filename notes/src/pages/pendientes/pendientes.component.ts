@@ -18,8 +18,21 @@ export class PendientesPage{
 
     listaSeleccionada( lista : Lista){
 
+        this.navCtrl.push( AgregarPage, {
+            titulo: lista.titulo,
+            lista: lista            
+        });
+
       //  console.log(lista);        
     }
+
+
+    borrarLista(lista: Lista){
+
+        this.deseosService.borrarLista(lista);
+    }
+
+
 
     agregarLista(){
         
